@@ -1,0 +1,113 @@
+html {
+    background-color: rgb(238, 232, 232);
+}
+
+@media only screen and (max-width: 375px) {
+    .buttonDiv {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        height: 00px;
+        padding-left: 25px;
+    }
+
+    .title {
+        display: block;
+        background-color: #111;
+        text-align: center;
+        color: white;
+    }
+
+    #cards {
+        margin-top: 20px;
+        height: 50px;
+    }
+
+    #cards>div {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .item {
+        background-color: #d6d2d2 !important;
+    }
+
+}
+
+@media only screen and (min-width: 960px) {
+    .content {
+        /* body {
+        width: 960px;
+     */
+    }
+
+    .item {
+        box-sizing: border-box;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .buttonDiv {
+        float: right;
+    }
+
+    #cards {
+        /* width: 70%; */
+        float: left;
+        display: grid;
+        gap: 0px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #cards>div {
+        /* padding: 10px; */
+        width: 200px;
+        height: 200px;
+        background-color: #ccc;
+        color: #fff;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .numberText {
+        font-size: 90px;
+    }
+
+    .button {
+        min-width: -webkit-fill-available;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+.button {
+
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #72C3DC;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #63aac0
+}
+
+.button:active {
+    background-color: #58a8c0;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
